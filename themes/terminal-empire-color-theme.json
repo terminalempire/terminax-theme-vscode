@@ -1,0 +1,60 @@
+{
+  "name": "Terminal Empire Theme",
+  "type": "dark",
+  "colors": {},
+  "tokenColors": [
+    {
+      "scope": [
+        "comment.block.termemp",
+        "comment.line.double-slash.termemp",
+        "comment.block",
+        "comment.line"
+      ],
+      "settings": {
+        "foreground": "#6A6A6A",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": [
+        "string.quoted.double.termemp",
+        "string.quoted.double",
+        "string"
+      ],
+      "settings": {
+        "foreground": "#FEDAE0",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "constant.numeric.termemp",
+        "constant.numeric"
+      ],
+      "settings": {
+        "foreground": "#90EE90",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": [
+        "variable.other.termemp",
+        "variable.other"
+      ],
+      "settings": {
+        "foreground": "#7CB9E8",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function.termemp",
+        "entity.name.function"
+      ],
+      "settings": {
+        "foreground": "#FFD895",
+        "fontStyle": ""
+      }
+    }
+  ]
+}

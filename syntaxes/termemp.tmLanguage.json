@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Terminal Empire",
+  "scopeName": "source.termemp",
+  "patterns": [
+    {
+      "name": "string.quoted.double.termemp",
+      "match": "\"(?:\\\\.|[^\"])*?\""
+    },
+    {
+      "name": "comment.block.termemp",
+      "begin": "/\\*",
+      "end": "\\*/"
+    },
+    {
+      "name": "comment.line.double-slash.termemp",
+      "match": "//.*$"
+    },
+    {
+      "name": "constant.numeric.termemp",
+      "match": "\\b\\d+(?:\\.\\d+)?\\b"
+    },
+    {
+      "name": "entity.name.function.termemp",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*(?=\\()"
+    },
+    {
+      "name": "variable.other.termemp",
+      "match": "\\$[A-Za-z_][A-Za-z0-9_]*"
+    }
+  ],
+  "repository": {}
+}

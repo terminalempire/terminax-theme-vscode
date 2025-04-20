@@ -1,0 +1,48 @@
+{
+  "name": "terminal-empire-syntax",
+  "displayName": "Terminal Empire Syntax",
+  "publisher": "yourname",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:termemp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourname/terminal-empire-syntax.git"
+  },
+  "categories": [
+    "Languages",
+    "Themes"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "termemp",
+        "aliases": ["Terminal Empire"],
+        "extensions": [".te"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "termemp",
+        "scopeName": "source.termemp",
+        "path": "./syntaxes/termemp.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Terminal Empire Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/terminal-empire-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
+  }
+}
